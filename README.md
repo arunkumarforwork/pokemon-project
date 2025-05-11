@@ -23,14 +23,16 @@ This project retrieves Pokémon data from the PokéAPI and outputs it in JSON fo
 
     * Clone this repository.
     * Build the Docker image:
+    
         ```bash
         docker build -t pokemon-app .
         ```
+        
     * Run the container, providing the Pokémon name as an argument:
+    
         ```bash
-        docker run pokemon-app <pokemon_name>
+        docker run pokemon-app pokemon-helm
         ```
-        (Replace `<pokemon_name>` with the name of the Pokémon, e.g., `pikachu`, `charmander`).
 
 **2.  Deploying to Kubernetes with Helm**
 
