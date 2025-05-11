@@ -24,9 +24,9 @@ This project retrieves Pokémon data from the PokéAPI and outputs it in JSON fo
 * Clone this repository.
 * Build the Docker image:
 
-        ```
+        
         docker build -t pokemon-app .
-        ```
+        
         
 * Run the container, providing the Pokémon name as an argument:
     
