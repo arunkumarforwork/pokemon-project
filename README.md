@@ -38,11 +38,13 @@ This project retrieves Pokémon data from the PokéAPI and outputs it in JSON fo
 
 * Clone this repository.
 * Add the repository:
+  
         ```bash
         helm repo add pokemon [https://your-helm-chart-repository.com](https://your-helm-chart-repository.com) # Replace with your helm repo
         helm repo update
         ```
 * Install the chart:
+  
         ```bash
         helm install pokemon pokemon/pokemon-chart --set image.repository=your-docker-image-name --set image.tag=latest # Replace with your image details
         ```
