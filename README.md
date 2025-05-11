@@ -28,7 +28,7 @@ This project retrieves Pokémon data from the PokéAPI and outputs it in JSON fo
         docker build -t pokemon-app .
         ```
         
-    * Run the container, providing the Pokémon name as an argument:
+* Run the container, providing the Pokémon name as an argument:
     
         ```
         docker run pokemon-app pokemon-helm
@@ -36,13 +36,13 @@ This project retrieves Pokémon data from the PokéAPI and outputs it in JSON fo
 
 **2.  Deploying to Kubernetes with Helm**
 
-    * Clone this repository.
-    * Add the repository:
+* Clone this repository.
+* Add the repository:
         ```bash
         helm repo add pokemon [https://your-helm-chart-repository.com](https://your-helm-chart-repository.com) # Replace with your helm repo
         helm repo update
         ```
-    * Install the chart:
+* Install the chart:
         ```bash
         helm install pokemon pokemon/pokemon-chart --set image.repository=your-docker-image-name --set image.tag=latest # Replace with your image details
         ```
